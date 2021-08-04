@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/web-icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Smart Notes App</title>
+</head>
+
+<body>
+    <header>
+        <h3>Smart Notes App</h3>
+        <marquee behaviour="sliding" direction="right" scrollamount="10" width="65%">
+            Manage your notes with a simple go
+        </marquee>
+    </header>
+    <section class="container">
+        <section class="add-notes">
+            <h2>Add new Notes</h2>
+            <hr>
+            <form onclick="return false">
+                <input type="date" id="note-date">
+                <input type="text" class="note-title" id="note-title" placeholder="Enter the Title" />
+                <textarea id="note-text" class="note-text" placeholder="Enter your text here"></textarea>
+                <button id="add-btn" type="click">ADD NOTES</button>
+            </form>
+        </section>
+        <section class="all-notes">
+            <h2>Your Notes</h2>
+            <hr>
+            <section id="notes" class="notes">
+                <!-- <div class="note">
+                    <p class="notes-count">Note 1 <span id="notes-date">WED Jan 20 2016</span> </p>
+                    <h3 class="note-title">shivam singh</h3>
+                    <p class="note-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut obcaecati
+                        accusantium voluptatibus natus aliquam vero beatae quis! Ex eum ratione, non deleniti veniam
+                        officia praesentium recusandae, reprehenderit delectus repudiandae ipsum rem asperiores!</p>
+                    <section class="button">
+                        <button class="delete-note-btn">Delete Note</button>
+                        <button class="edit-note-btn">Edit Note</button>
+                    </section>
+                </div> -->
+            </section>
+        </section>
+        <button id="clear-all" class="delete-all-note-btn">Delete all</button>
+    </section>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

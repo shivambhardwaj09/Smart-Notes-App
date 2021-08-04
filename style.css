@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-image: url('./images/todolistbg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+hr {
+  color: #fff;
+}
+header {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  background-color: rgba(250, 255, 183, 0.4);
+  border-bottom: 2px solid #000;
+  position: sticky;
+  top: 0;
+}
+header h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:rgb(0, 119, 255);
+}
+marquee {
+  font-family: "Texturina", serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 4px;
+  color:rgb(55, 0, 255);
+}
+.container {
+  margin: 5% 2%;
+  padding: 0 3%;
+  min-height: 70vh;
+}
+.add-notes {
+  margin: 5% 8% 8% 8%;
+  padding: 1% 0 3% 0;
+  background-color: rgba(231, 25, 76, 0.2);
+  border-radius: 6px;
+  border-top: 2px solid red;
+}
+.add-notes h2,
+.all-notes h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Bree Serif', serif;
+  margin: 0 0 5px 0;
+  margin-left: 10px;
+  color:rgb(255, 209, 59);
+}
+.add-notes form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+form input[type=date] {
+  align-self:flex-end;
+  margin-right: 103px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  color:rgb(248, 18, 18);
+  width: 150px;
+  font-family: 'Bree Serif', serif;
+  font-size: 16px;
+  outline: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+form .note-title {
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+form .note-text {
+  height: 180px;
+  resize: none;
+  border: none;
+}
+form .note-title,
+form .note-text {
+  overflow-y: hidden;
+  width: 60vw;
+  font-size: 16px;
+  font-family: 'Texturina', serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgba(245, 180, 142, 0.4);
+  border-bottom: 2px solid #000;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+::placeholder {
+  color:rgb(252, 248, 0);
+}
+form button {
+  padding: 1% 2%;
+  font-size: 14px;
+  font-family: 'Bree Serif', serif;
+  font-weight: 600;
+  background-color: rgb(252, 246, 161);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 4px solid rgb(255, 209, 59);
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgb(255, 229, 81);
+}
+form button:active {
+  transform: translateY(3px);
+}
+.all-notes {
+  margin: 2% 0%;
+  border-bottom: 2px solid red;
+  padding: 3% 5%;
+  background-color: rgba(231, 25, 76, 0.2);
+  border-radius: 6px;
+}
+.notes {
+  margin-top: 30px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Salsa', cursive;
+}
+.notes section {
+  margin: 0 20px 10px 0;
+}
+.notes .note {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  width: 430px;
+  height: 330px;
+  margin: 10px 10px 20px 0;
+  border-radius: 4px;
+}
+.notes .note .notes-count {
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: 'Bree Serif', serif;
+  left: 10px;
+}
+.notes .note span {
+  margin-left: 230px;
+  font-family: 'Bree Serif', serif;
+  text-decoration: underline;
+  font-size: 15px;
+}
+.notes .note .note-title {
+  font-family: 'Texturina', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.notes .note .note-text {
+  padding: 0.5% 1%;
+  word-spacing: 2px;
+}
+.notes .note .button {
+  position: relative;
+  margin: 10px auto;
+}
+.notes footer button,
+.delete-all-note-btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Bree Serif', serif;
+  border-radius: 4px;
+  background-color: rgba(247, 67, 67, 0.61);
+  border-bottom: 2px solid rgb(255, 0, 0, 0.6);
+}
+.notes footer button:hover,
+.delete-all-note-btn:hover {
+  background-color: rgb(255, 34, 34);
+  color: #000;
+}
+.notes footer button:active,
+.delete-all-note-btn:active {
+  transform: translateY(4px);
+}
+
+/* font-family: 'Texturina', serif; */
+/* font-family: 'Salsa', cursive; */
+/* font-family: 'Bree Serif', serif; */
